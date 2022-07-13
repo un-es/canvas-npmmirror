@@ -1,3 +1,15 @@
+# canvas-npmmirror
+
+A fork of [`canvas`](https://github.com/Automattic/node-canvas) using [`npmmirror`](https://npmmirror.com) as registry
+
+## Installation
+
+```bash
+$ npm install canvas@npm:canvas-npmmirror@latest
+```
+
+---
+
 # node-canvas
 
 ![Test](https://github.com/Automattic/node-canvas/workflows/Test/badge.svg)
