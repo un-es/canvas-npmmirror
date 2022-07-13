@@ -1,6 +1,6 @@
 {
-  "name": "canvas",
-  "description": "Canvas graphics API backed by Cairo",
+  "name": "canvas-npmmirror",
+  "description": "A fork of `canvas` using `npmmirror` as registry",
   "version": "3.2.3",
   "author": "TJ Holowaychuk <tj@learnboost.com>",
   "main": "index.js",
@@ -9,7 +9,8 @@
   "contributors": [
     "Nathan Rajlich <nathan@tootallnate.net>",
     "Rod Vagg <r@va.gg>",
-    "Juriy Zaytsev <kangax@gmail.com>"
+    "Juriy Zaytsev <kangax@gmail.com>",
+    "JounQin (https://www.1stG.me) <admin@1stg.me>"
   ],
   "keywords": [
     "canvas",
@@ -21,8 +22,8 @@
     "images",
     "pdf"
   ],
-  "homepage": "https://github.com/Automattic/node-canvas",
-  "repository": "git://github.com/Automattic/node-canvas.git",
+  "homepage": "https://github.com/un-es/canvas-npmmirror",
+  "repository": "git://github.com/un-es/canvas-npmmirror.git",
   "scripts": {
     "prebenchmark": "node-gyp build",
     "benchmark": "node benchmarks/run.js",
@@ -65,7 +66,12 @@
   "binary": {
     "napi_versions": [
       7
-    ]
+    ],
+    "module_name": "canvas",
+    "module_path": "build/Release",
+    "host": "https://registry.npmmirror.com/-/binary/canvas/",
+    "remote_path": "v{version}",
+    "package_name": "{module_name}-v{version}-napi-v{abi}-{platform}-{arch}.tar.gz"
   },
   "license": "MIT"
 }
